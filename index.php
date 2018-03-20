@@ -25,7 +25,7 @@ $_SESSION['phrase'] = $builder->getPhrase();
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     <img src="<?= $builder->inline(); ?>" alt="">
-    <form action="verify.php" method="post">
+    <form action="validate.php" method="post">
       <label for="captcha">Enter Text: </label>
       <input name="f_captcha" id="captcha">
       <input type="submit" name="submit" value="OK">
