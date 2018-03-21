@@ -2,12 +2,12 @@
 session_start();
 
 class GrgCaptcha1 {
-  // ret str
+  // ret boolean
   function verify($captcha) {
     if (strtolower($captcha) == strtolower($_SESSION['phrase'])) {
-      return "ok"; 
+      return true; 
     } else {
-      return "retry"; 
+      return false;
     }
   } 
 }

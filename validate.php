@@ -38,7 +38,12 @@ if($validated === TRUE) {
   
   // verify
   $vcaptcha = new GrgCaptcha1;
-  echo $vcaptcha->verify($postData['captcha']);
+  
+  if ($vcaptcha->verify($postData['captcha'])) {
+    echo "captcha ok"; 
+  } else {
+    echo "retry"; 
+  }
   
   // exit;  
 
